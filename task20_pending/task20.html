@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<style>
+.leftButton{
+position: absolute;
+top: 20%;
+left: 2%;
+}
+.rightButton{
+position: absolute;
+top: 20%;
+left: 14%;
+}
+</style>
+</head>
+<body style="background:darkblue;color:white"> 
+<h1>Click the button to increase or Decrease five seconds</h1>
+<button class="leftButton" onclick="setCurTime()" type="button"><</button><br> 
+<button class="rightButton" onclick="setCurTime1()" type="button">></button><br> 
+
+<div>
+<video id="myVideo" width="320" height="176" controls>
+  <source src="video/zoom_earth.mp4" type="video/mp4">
+  
+</video>
+</div>
+<script>
+var vid = document.getElementById("myVideo");
+
+
+function setCurTime1() { 
+  vid.currentTime=vid.currentTime+5;
+} 
+
+ 
+
+function setCurTime() { 
+  vid.currentTime=vid.currentTime-5;
+} 
+
+
+
+ 
+</script> 
+
+ 
+
+</body> 
+</html>
